@@ -15,13 +15,13 @@ const styles = StyleSheet.create({
 textStyle:{
     fontFamily: "Poppins",
     fontSize: 18,
-    fontWeight:"600",
+    fontWeight:"800",
     lineHeight: 27,
     textAlign: "left",
     textDecorationStyle: "solid",
     color:"#fff",
     paddingBottom: 16,
-    paddingTop:16
+    paddingTop:20
 }
 })
 

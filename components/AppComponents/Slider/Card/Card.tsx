@@ -1,14 +1,21 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
+import { ISlider } from '@/types/types'
 
-type Props = {}
 
-const Card = (props: Props) => {
+const Card = ({movie}: {movie:ISlider}) => {
   return (
-    <View>
-      <Text>Card</Text>
+    <View style={styles.wrapper}>
+      <Image source={movie.image} />
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+    wrapper:{
+        flex:1,
+        marginRight: 20
+    }
+})
 
 export default Card

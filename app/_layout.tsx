@@ -26,10 +26,9 @@ export default function RootLayout() {
 
   return (
     <Fragment>
-      <Stack initialRouteName="index" screenOptions={{ headerShown: false }}>
+      <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
-        <Stack.Screen name="index" />
       </Stack>
       <StatusBar style="light" />
     </Fragment>
