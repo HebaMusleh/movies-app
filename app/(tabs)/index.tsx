@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 import {
   Container,
@@ -8,7 +8,42 @@ import {
   Slider,
   Tabs,
 } from "@/components/AppComponents";
-import { TabData } from "@/constants/data";
+import HomeScreenContent from "@/components/AppComponents/HomeScreenContent.tsx/HomeScreenContent";
+
+const TabData = [
+  {
+    key: "1",
+    title: "Now Playing",
+    content: React.createElement(HomeScreenContent),
+  },
+  {
+    key: "2",
+    title: "Upcoming",
+    content: (
+      <View>
+        <Text>UpComing Components</Text>
+      </View>
+    ),
+  },
+  {
+    key: "3",
+    title: "Top Rated",
+    content: (
+      <View>
+        <Text>Top Rated</Text>
+      </View>
+    ),
+  },
+  {
+    key: "4",
+    title: "Popular",
+    content: (
+      <View>
+        <Text>Popular Components</Text>
+      </View>
+    ),
+  },
+];
 
 const HomeScreen = () => {
   return (

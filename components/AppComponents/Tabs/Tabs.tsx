@@ -33,7 +33,7 @@ const Tabs = ({ tabs }: { tabs: ITab[] }) => {
           </TouchableOpacity>
         ))}
       </ScrollView>
-      <ScrollView style={styles.content}>{renderContent()}</ScrollView>
+      <View style={styles.content}>{renderContent()}</View>
     </View>
   );
 };
@@ -60,7 +60,10 @@ const styles = StyleSheet.create({
     fontWeight: "700",
 
   },
-  content: {},
+  content: {
+    flexDirection:"row",
+    flexWrap:"wrap",
+  },
 });
 
 export default Tabs;

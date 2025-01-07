@@ -29,6 +29,7 @@ export default function RootLayout() {
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
+        <Stack.Screen name="detailsScreen" />
       </Stack>
       <StatusBar style="light" />
     </Fragment>
