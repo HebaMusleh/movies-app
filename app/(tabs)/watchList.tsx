@@ -1,13 +1,19 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import { Container } from '@/components/AppComponents'
+import { Header } from '@/components/DetailsComponents'
+import { Card } from '@/components/WatchListComponents'
 
 type Props = {}
 
 const WatchList = (props: Props) => {
   return (
-    <View>
-      <Text>WatchList</Text>
-    </View>
+    <Container>
+      <Header
+      title='WatchList'
+      />
+      <Card/>
+    </Container>
   )
 }
 

@@ -10,7 +10,9 @@ const DetailsScreen = () => {
   const { id } = useLocalSearchParams();
   console.log("Movie ID:", id);
 
-  const movie = mockMoviesData.find((item) => item.id === parseInt(Array.isArray(id) ? id[0] : id, 10));
+  const movie = mockMoviesData.find(
+    (item) => item.id === parseInt(Array.isArray(id) ? id[0] : id, 10)
+  );
 
   if (!movie) {
     return (
@@ -20,11 +22,12 @@ const DetailsScreen = () => {
     );
   }
 
-  return <Container>
-    <Header/>
-    <DetailsCard movie={movie}/>
-
-  </Container>;
+  return (
+    <Container>
+      <Header title="Details" icon />
+      <DetailsCard movie={movie} />
+    </Container>
+  );
 };
 
 export default DetailsScreen;
