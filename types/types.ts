@@ -8,6 +8,7 @@ interface IData {
   image: any;
   header: any;
   reviews: number;
+  type: string;
 }
 
 interface ISlider {
@@ -23,7 +24,7 @@ interface ISlider {
 interface ITab {
   key: string;
   title: string;
-  content: React.ReactNode;
+  content: React.ReactNode ;
 }
 
 export { ITab, IData, ISlider };

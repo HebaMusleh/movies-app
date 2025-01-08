@@ -24,6 +24,7 @@ export const mockMoviesData = [
     image: m1,
     header: header,
     reviews: 9.5,
+    type:"action"
   },
   {
     id: 2,
@@ -36,6 +37,8 @@ export const mockMoviesData = [
     image: m2,
     header: header,
     reviews: 9.5,
+    type:"action"
+
   },
   {
     id: 3,
@@ -48,6 +51,8 @@ export const mockMoviesData = [
     image: m3,
     header: header,
     reviews: 9.5,
+    type:"action"
+
   },
   {
     id: 4,
@@ -60,6 +65,8 @@ export const mockMoviesData = [
     image: m4,
     header: header,
     reviews: 7.5,
+    type:"action"
+
   },
   {
     id: 5,
@@ -72,6 +79,8 @@ export const mockMoviesData = [
     image: m5,
     header: header,
     reviews: 9.5,
+    type:"cartoon"
+
   },
   {
     id: 6,
@@ -84,6 +93,8 @@ export const mockMoviesData = [
     image: m6,
     header: header,
     reviews: 9.5,
+    type:"action"
+
   },
   {
     id: 7,
@@ -96,6 +107,8 @@ export const mockMoviesData = [
     image: m7,
     header: header,
     reviews: 9.5,
+    type:"action"
+
   },
 ];
 
