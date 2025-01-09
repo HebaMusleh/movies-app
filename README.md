@@ -1,4 +1,4 @@
-![Screenshot_1736435988](https://github.com/user-attachments/assets/4cb9d2bb-53a6-43eb-ac5c-2cbe10dcfb0b)# Movies App 🎬
+# Movies App 🎬
 
 A mobile application built using React Native and Expo for displaying movies.
 
@@ -49,7 +49,9 @@ To get started, follow these steps:
 - Context API
 
   ## APP Screens
-![Home Screen](https://github.com/user-attachments/assets/6cc322da-f1c1-4e79-8d6d-ca18370b82c2 | width=300)
-![Movie Details Screen](https://github.com/user-attachments/assets/0fa84481-c2cb-4f7f-bdb8-38b63dc7a55c)
-![WatchList Screen](https://github.com/user-attachments/assets/208a4403-2358-4b88-9a30-5fc08f88573a)
+  <p align="center">
+     <img src="https://github.com/user-attachments/assets/6cc322da-f1c1-4e79-8d6d-ca18370b82c2" width="300" />
+     <img src="https://github.com/user-attachments/assets/0fa84481-c2cb-4f7f-bdb8-38b63dc7a55c" width="300" />
+    <img src="https://github.com/user-attachments/assets/208a4403-2358-4b88-9a30-5fc08f88573a" width="300" />
+</p>
 
