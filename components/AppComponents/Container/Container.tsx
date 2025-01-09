@@ -1,12 +1,10 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { getStatusBarHeight } from "react-native-status-bar-height";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
-  const statusBarHeight = getStatusBarHeight();
   return (
-    <SafeAreaView style={[styles.container, { paddingTop: statusBarHeight }]}>
+    <SafeAreaView style={styles.container}>
       <ScrollView>{children}</ScrollView>
     </SafeAreaView>
   );
