@@ -1,22 +1,38 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
+import { IData } from "@/types/types";
+import { router } from "expo-router";
 
-const Card = () => {
+const SingleCard = ({ movie }: { movie: IData }) => {
   return (
-    <View style={styles.wrapper}>
+    <TouchableOpacity
+      onPress={() =>
+        router.push({
+          pathname: "/detailsScreen/[id]",
+          params: { id: movie.id },
+        })
+      }
+      style={styles.wrapper}
+    >
       <View>
-        <Image
-          style={styles.ImageStyle}
-          source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }}
-        />
+        <Image style={styles.ImageStyle} source={movie.image} />
       </View>
       <View style={{ justifyContent: "space-evenly" }}>
-        <Text style={styles.titleStyle}>Movie Title</Text>
+        <Text style={styles.titleStyle}>{movie.title}</Text>
         <View>
           <View style={styles.details}>
             <MaterialIcons size={16} name="star" color="orange" />
-            <Text style={[styles.text, { color: "orange" }]}>9.5</Text>
+            <Text style={[styles.text, { color: "orange" }]}>
+              {movie.reviews}
+            </Text>
           </View>
           <View style={styles.details}>
             <MaterialIcons
@@ -24,19 +40,29 @@ const Card = () => {
               name="confirmation-number"
               color={"#eee"}
             />
-            <Text style={styles.text}>Action</Text>
+            <Text style={styles.text}>{movie.type}</Text>
           </View>
           <View style={styles.details}>
             <MaterialIcons size={16} name="calendar-today" color={"#eee"} />
-            <Text style={styles.text}>2019</Text>
+            <Text style={styles.text}>{movie.year}</Text>
           </View>
           <View style={styles.details}>
             <MaterialIcons size={16} name="access-time" color={"#eee"} />
-            <Text style={styles.text}>20 minutes</Text>
+            <Text style={styles.text}>{movie.runtime} minutes</Text>
           </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
+  );
+};
+
+const Card = ({ movie }: { movie: IData[] | null }) => {
+  return (
+    <FlatList
+      data={movie}
+      renderItem={({ item }) => <SingleCard movie={item} />}
+      keyExtractor={(item) => item.id.toString()}
+    />
   );
 };
 
