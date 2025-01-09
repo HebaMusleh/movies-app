@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+![Screenshot_1736435988](https://github.com/user-attachments/assets/4cb9d2bb-53a6-43eb-ac5c-2cbe10dcfb0b)# Movies App 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application built using React Native and Expo for displaying movies.
 
-## Get started
+## Installation
 
-1. Install dependencies
+To get started, follow these steps:
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HebaMusleh/movies-app.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd movies-app
+   ```
+
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+## Running the App
 
+1. Start the application:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+2. You can open the app in:
+   - Android Emulator
+   - iOS Simulator
+   - Expo Go (on your device)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## File Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **assets**: Images and static resources.
+- **components**: UI components like buttons, movie cards, etc.
+- **context**: Global state management.
+- **hooks**: Custom hooks for reusable logic.
+- **types**: TypeScript type definitions.
+  
+## Technologies Used
 
-## Get a fresh project
+- React Native
+- Expo
+- React Navigation
+- Context API
 
-When you're ready, run:
+  ## APP Screens
+![Home Screen](https://github.com/user-attachments/assets/6cc322da-f1c1-4e79-8d6d-ca18370b82c2 | width=300)
+![Movie Details Screen](https://github.com/user-attachments/assets/0fa84481-c2cb-4f7f-bdb8-38b63dc7a55c)
+![WatchList Screen](https://github.com/user-attachments/assets/208a4403-2358-4b88-9a30-5fc08f88573a)
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
