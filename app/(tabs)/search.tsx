@@ -1,14 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from "react";
+import { Text, View } from "react-native";
 
-type Props = {}
+import {
+  Container,
+  Header,
+  Search as SearchComponent,
+} from "@/components/AppComponents";
 
-const Search = (props: Props) => {
+const Search = () => {
   return (
-    <View>
-      <Text>Search</Text>
-    </View>
-  )
-}
+    <Container>
+      <Header />
+      <SearchComponent />
+      <View>
+        <Text>Result show here !</Text>
+      </View>
+    </Container>
+  );
+};
 
-export default Search
+export default Search;
