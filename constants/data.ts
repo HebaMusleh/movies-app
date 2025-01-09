@@ -1,3 +1,6 @@
+import React from 'react';
+import HomeScreenContent from './../components/AppComponents/HomeScreenContent.tsx/HomeScreenContent';
+
 import m1 from "../assets/images/movie-1.png";
 import m2 from "../assets/images/movie-2.png";
 import m3 from "../assets/images/movie-3.png";
@@ -7,15 +10,13 @@ import m6 from "../assets/images/movie-6.png";
 import m7 from "../assets/images/movie-7.png";
 import m9 from "../assets/images/movie-9.png";
 import m10 from "../assets/images/movie-10.png";
-
 import header from "../assets/images/header-1.png";
-import React from 'react';
-import HomeScreenContent from './../components/AppComponents/HomeScreenContent.tsx/HomeScreenContent';
+
 
 export const mockMoviesData = [
   {
     id: 1,
-    title: "The Shawshank Redemption",
+    title: "The Redemption",
     year: 1994,
     runtime: 142,
     actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
@@ -28,7 +29,7 @@ export const mockMoviesData = [
   },
   {
     id: 2,
-    title: "The Shawshank Redemption",
+    title: "The Dark Knight",
     year: 1904,
     runtime: 170,
     actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
@@ -42,7 +43,7 @@ export const mockMoviesData = [
   },
   {
     id: 3,
-    title: "The Shawshank Redemption",
+    title: "Interstellar",
     year: 1904,
     runtime: 170,
     actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
@@ -56,7 +57,7 @@ export const mockMoviesData = [
   },
   {
     id: 4,
-    title: "The Shawshank Redemption",
+    title: "Forrest Gump",
     year: 1924,
     runtime: 170,
     actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
@@ -70,7 +71,7 @@ export const mockMoviesData = [
   },
   {
     id: 5,
-    title: "The Shawshank Redemption",
+    title: "Inception",
     year: 1904,
     runtime: 120,
     actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
